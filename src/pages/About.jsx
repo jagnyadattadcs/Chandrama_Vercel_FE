@@ -1,11 +1,7 @@
 import React from "react";
-// Assuming framer-motion is available in the environment
 import { motion } from "framer-motion";
 
-// Define the custom primary color for text and accents
 const PRIMARY_COLOR = "rgb(245, 220, 75)";
-
-// --- Utility Components and Data ---
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -120,32 +116,33 @@ const About = () => {
     >
       <main>
         {/* --- Hero Section: The Vision --- */}
-        <section className="relative pt-24 pb-16 overflow-hidden bg-black">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="relative pt-15  overflow-hidden bg-black">
+          <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.h2
-              className="text-4xl md:text-5xl font-bold mb-6  tracking-wide"
+              className="text-3xl md:text-4xl font-bold mb-6  tracking-wide"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}  
+              transition={{ duration: 0.8 }}
             >
-              Our Happy Investors
+              Meet Our Dedicated Team
             </motion.h2>
             <motion.p
-              className="text-neutral-400 text-xl max-w-5xl mx-auto mb-16"
+              className="text-neutral-400 text-[1.1em] max-w-5xl mx-auto mb-16"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Discover how our clients have transformed their investments into
-              thriving homes and future-ready opportunities. Here’s what they
-              have to say.
+              Get to know the passionate professionals behind Chandrama Realcon.
+              Each member of our team plays a vital role in building trust,
+              ensuring transparency, and delivering excellence in every project
+              we undertake.
             </motion.p>
 
             {/* --- Review Cards --- */}
-            <div className="space-y-10">
-              {/* Row 1 (2 cards) */}
-              {/* <motion.div
-                className="flex flex-wrap justify-center gap-8"
+            <div className="space-y-10 ">
+              {/* First Row (2 cards) */}
+              <motion.div
+                className="flex flex-wrap justify-center gap-6 mb-10"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="show"
@@ -153,47 +150,56 @@ const About = () => {
               >
                 {[
                   {
-                    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
-                    name: "Neha Sharma",
+                    img: "/WhatsApp_Image_2025-10-23_at_10.46.38_b0d4fe9d-removebg-preview.png",
+                    name: "Rupashri Samantaray",
+                    Desgination: " Director",
                     review:
-                      "Absolutely loved the transparency! The plots are in prime locations with excellent growth potential.",
+                      "As a Director, I take pride in how our company ensures transparency, quality, and trust in every real estate deal.",
                   },
                   {
-                    img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
-                    name: "Aarav Patel",
+                    img: "/WhatsApp Image 2025-10-23 at 10.46.16_1dfaded2.jpg",
+                    name: "Rashmi Ranjan Biswal",
+                    Desgination: "Managing Director",
                     review:
-                      "Chandrama Realcon made my first investment journey effortless. The legal clarity and support were top-notch!",
-                  },
+                      "As the Managing Director, I’ve witnessed remarkable client satisfaction and consistent project excellence from our team.",
+                  }
                 ].map((card, index) => (
                   <motion.div
                     key={index}
-                    className="relative bg-neutral-800 rounded-2xl shadow-lg overflow-hidden w-80 group hover:shadow-2xl transition-all duration-500"
+                    className="relative bg-neutral-900 rounded-[0.4rem] shadow-xl overflow-hidden w-82 group hover:shadow-[0_0_10px_#00C2A8] transition-all duration-500  border border-neutral-800 hover:border-[#00C2A8]/40"
                     variants={itemVariants}
                     whileHover={{ scale: 1.05 }}
                   >
                     <motion.img
                       src={card.img}
                       alt={card.name}
-                      className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-64 object-cover group-hover:scale-104 transition-transform duration-500"
                     />
-                    <div className="p-5 text-left">
+                    <div className="p-4 text-left">
                       <h3
-                        className="text-xl font-bold mb-2"
+                        className="text-xl font-semibold mb-2"
                         style={{ color: PRIMARY_COLOR }}
                       >
                         {card.name}
                       </h3>
-                      <p className="text-neutral-400 text-sm leading-relaxed italic">
+                      <h3
+                        className="text-lg font-semibold mb-2"
+                        style={{ color: PRIMARY_COLOR }}
+                      >
+                        ({card.Desgination})
+                      </h3>
+                      <p className="text-neutral-100 text-sm leading-relaxed italic">
                         “{card.review}”
                       </p>
                     </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500"></div>
                   </motion.div>
                 ))}
-              </motion.div> */}
+              </motion.div>
 
-              {/* Row 2 (3 cards) */}
-              {/* <motion.div
-                className="flex flex-wrap justify-center gap-8"
+              {/* Second Row (3 cards) */}
+              <motion.div
+                className="flex flex-wrap justify-center gap-6"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="show"
@@ -201,55 +207,65 @@ const About = () => {
               >
                 {[
                   {
-                    img: "https://images.unsplash.com/photo-1603415526960-f7e0328d7d2a",
-                    name: "Rohan Mehta",
+                    img: "/WhatsApp Image 2025-10-23 at 10.47.08_b7e7bd2a.jpg",
+                    name: "Chittaranjan Sahoo",
+                    Desgination: " Channel Partner",
                     review:
-                      "I got possession immediately and even started construction. Their support team guided me through every step.",
+                      "As a Channel Partner, I’ve seen firsthand the professionalism and integrity that make Chandrama Realcon stand out.",
                   },
                   {
-                    img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
-                    name: "Priya Das",
+                    img: "/WhatsApp Image 2025-10-23 at 10.47.09_eed402ed.jpg",
+                    name: "Siba Chandan Charchi",
+                    Desgination: " Partner",
                     review:
-                      "Incredible service! Within two years, my investment value has doubled. Truly a future-proof property.",
+                      "As a Partner, I value the collaborative environment and our shared vision of delivering future-ready investments.",
                   },
                   {
-                    img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36",
-                    name: "Vikram Singh",
+                    img: "/WhatsApp Image 2025-10-23 at 16.59.18_a27dae39.jpg",
+                    name: "Santanu sovan Mishra",
+                    Desgination: "Channel Partner",
                     review:
-                      "A trustworthy team with deep knowledge of real estate. Highly recommended for serious investors!",
+                      "As a Channel Partner, I value the collaborative environment and our shared vision of delivering future-ready investments.",
                   },
                 ].map((card, index) => (
                   <motion.div
-                    key={index}
-                    className="relative bg-neutral-800 rounded-2xl shadow-lg overflow-hidden w-80 group hover:shadow-2xl transition-all duration-500"
+                    key={index + 2}
+                    className="relative bg-neutral-900 rounded-[0.4rem] shadow-xl overflow-hidden w-82 group hover:shadow-[0_0_10px_#00C2A8] transition-all duration-500  border border-neutral-800 hover:border-[#00C2A8]/40"
                     variants={itemVariants}
                     whileHover={{ scale: 1.05 }}
                   >
                     <motion.img
                       src={card.img}
                       alt={card.name}
-                      className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-64 object-cover group-hover:scale-104 transition-transform duration-500"
                     />
-                    <div className="p-5 text-left">
+                    <div className="p-4 text-left">
                       <h3
-                        className="text-xl font-bold mb-2"
+                        className="text-xl font-semibold mb-2"
                         style={{ color: PRIMARY_COLOR }}
                       >
                         {card.name}
                       </h3>
-                      <p className="text-neutral-400 text-sm leading-relaxed italic">
+                      <h3
+                        className="text-lg font-semibold mb-2"
+                        style={{ color: PRIMARY_COLOR }}
+                      >
+                        ({card.Desgination})
+                      </h3>
+                      <p className="text-neutral-100 text-sm leading-relaxed italic">
                         “{card.review}”
                       </p>
                     </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500"></div>
                   </motion.div>
                 ))}
-              </motion.div> */}
+              </motion.div>
             </div>
           </div>
         </section>
 
         {/* --- Core Values Section (Large Content Block 1) --- */}
-        <section id="our-vision" className={`py-5 sm:py-10 bg-black`}>
+        <section id="our-vision" className={"py-15  bg-black"}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionTitle>
               Our Foundation: Principles that Drive Us
