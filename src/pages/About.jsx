@@ -148,21 +148,21 @@ const About = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}
               >
-                {[
-                  {
-                    img: "/WhatsApp_Image_2025-10-23_at_10.46.38_b0d4fe9d-removebg-preview.png",
-                    name: "Rupashri Samantaray",
-                    Desgination: " Director",
-                    review:
-                      "As a Director, I take pride in how our company ensures transparency, quality, and trust in every real estate deal.",
-                  },
-                  {
+                {[{
                     img: "/WhatsApp Image 2025-10-23 at 10.46.16_1dfaded2.jpg",
                     name: "Rashmi Ranjan Biswal",
                     Desgination: "Managing Director",
                     review:
                       "As the Managing Director, I’ve witnessed remarkable client satisfaction and consistent project excellence from our team.",
                   },
+                  {
+                    img: "/WhatsApp_Image_2025-10-23_at_10.46.38_b0d4fe9d-removebg-preview.png",
+                    name: "Rupashri Samantaray",
+                    Desgination: " Director",
+                    review:
+                      "As a Director, I take pride in how our company ensures transparency, quality, and trust in every real estate deal.",
+                  }
+                  
                 ].map((card, index) => (
                   <motion.div
                     key={index}
