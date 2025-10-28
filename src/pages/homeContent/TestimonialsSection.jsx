@@ -7,22 +7,25 @@ const TestimonialsSection = () => {
       name: "Sourav Behera",
       role: "Property Buyer",
       content:
-        "ChandramaRealcone helped me find a beautiful plot near Patia, Bhubaneswar. The whole process was transparent and hassle-free. Truly impressed!",
-      avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+        "ChandramaRealcon helped me find a beautiful plot near Patia, Bhubaneswar. The whole process was transparent and hassle-free. Truly impressed!",
+      avatar:
+        "https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwbWFufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
     },
     {
       name: "Ananya Rout",
       role: "Property Seller",
       content:
-        "I sold my land in Cuttack within a month through ChandramaRealcone. Their team was very supportive and handled everything professionally.",
-      avatar: "https://randomuser.me/api/portraits/women/47.jpg",
+        "I sold my land in Cuttack within a month through ChandramaRealcon. Their team was very supportive and handled everything professionally.",
+      avatar:
+        "https://img.freepik.com/premium-photo/portrait-young-indian-woman-happy-with-internship-human-resources-opportunity-mission-vision-company-values-goals-face-headshot-gen-z-person-with-hr-job-about-us-faq_590464-134290.jpg",
     },
     {
       name: "Debasish Nayak",
       role: "Investor",
       content:
-        "I invested in a property near Khordha suggested by ChandramaRealcone, and it has already appreciated well. Their local market insight is excellent.",
-      avatar: "https://randomuser.me/api/portraits/men/53.jpg",
+        "I invested in a property near Khordha suggested by ChandramaRealcon, and it has already appreciated well. Their local market insight is excellent.",
+      avatar:
+        "https://img.freepik.com/free-photo/indian-man-smiling-mockup-psd-cheerful-expression-closeup-portra_53876-143269.jpg",
     },
   ];
 

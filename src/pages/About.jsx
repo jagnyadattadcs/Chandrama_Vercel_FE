@@ -162,13 +162,13 @@ const About = () => {
                     Desgination: "Managing Director",
                     review:
                       "As the Managing Director, I’ve witnessed remarkable client satisfaction and consistent project excellence from our team.",
-                  }
+                  },
                 ].map((card, index) => (
                   <motion.div
                     key={index}
-                    className="relative bg-neutral-900 rounded-[0.4rem] shadow-xl overflow-hidden w-82 group hover:shadow-[0_0_10px_#00C2A8] transition-all duration-500  border border-neutral-800 hover:border-[#00C2A8]/40"
+                    className="relative  bg-neutral-900 rounded-[0.4rem] shadow-xl overflow-hidden w-82 group hover:shadow-[0_0_10px_#00C2A8] transition-all duration-500  border border-neutral-800 hover:border-[#00C2A8]/40"
                     variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.02 }}
                   >
                     <motion.img
                       src={card.img}
@@ -207,14 +207,14 @@ const About = () => {
               >
                 {[
                   {
-                    img: "/WhatsApp Image 2025-10-23 at 10.47.08_b7e7bd2a.jpg",
+                    img: "/WhatsApp Image 2025-10-23 at 10.47.09_eed402ed.jpg ",
                     name: "Chittaranjan Sahoo",
-                    Desgination: " Channel Partner",
+                    Desgination: "  Partner",
                     review:
-                      "As a Channel Partner, I’ve seen firsthand the professionalism and integrity that make Chandrama Realcon stand out.",
+                      "As a Partner, I’ve seen firsthand the professionalism and integrity that make Chandrama Realcon stand out.",
                   },
                   {
-                    img: "/WhatsApp Image 2025-10-23 at 10.47.09_eed402ed.jpg",
+                    img: "/WhatsApp Image 2025-10-23 at 10.47.08_b7e7bd2a.jpg",
                     name: "Siba Chandan Charchi",
                     Desgination: " Partner",
                     review:
@@ -222,17 +222,17 @@ const About = () => {
                   },
                   {
                     img: "/WhatsApp Image 2025-10-23 at 16.59.18_a27dae39.jpg",
-                    name: "Santanu sovan Mishra",
-                    Desgination: "Channel Partner",
+                    name: "Santanu Sovan Mishra",
+                    Desgination: "Partner",
                     review:
-                      "As a Channel Partner, I value the collaborative environment and our shared vision of delivering future-ready investments.",
+                      "As a Partner, I value the collaborative environment and our shared vision of delivering future-ready investments.",
                   },
                 ].map((card, index) => (
                   <motion.div
                     key={index + 2}
-                    className="relative bg-neutral-900 rounded-[0.4rem] shadow-xl overflow-hidden w-82 group hover:shadow-[0_0_10px_#00C2A8] transition-all duration-500  border border-neutral-800 hover:border-[#00C2A8]/40"
+                    className="relative m-4 bg-neutral-900 rounded-[0.4rem] shadow-xl overflow-hidden w-82 group hover:shadow-[0_0_10px_#00C2A8] transition-all duration-500  border border-neutral-800 hover:border-[#00C2A8]/40"
                     variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.02 }}
                   >
                     <motion.img
                       src={card.img}
